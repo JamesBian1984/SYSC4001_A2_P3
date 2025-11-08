@@ -13,7 +13,7 @@
 60, 150, loading program into memory
 210, 3, marking partition (occupied)
 213, 6, updating PCB
-219, 0, scheduler called
+219, 0, SYSCALL: call scheduler
 219, 1, SYSCALL: Return from ISR (IRET) 
 220, 1, switch to kernel mode
 221, 10, context saved
@@ -30,7 +30,7 @@
 295, 225, loading program into memory
 520, 3, marking partition (occupied)
 523, 6, updating PCB
-529, 0, scheduler called
+529, 0, SYSCALL: call scheduler
 529, 1, SYSCALL: Return from ISR (IRET) 
 530, 53, CPU Burst
 583, 1, switch to kernel mode
@@ -41,7 +41,7 @@
 629, 225, loading program into memory
 854, 3, marking partition (occupied)
 857, 6, updating PCB
-863, 0, scheduler called
+863, 0, SYSCALL: call scheduler
 863, 1, SYSCALL: Return from ISR (IRET) 
 864, 53, CPU Burst
 917, 205, CPU Burst

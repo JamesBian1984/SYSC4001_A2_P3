@@ -9,17 +9,6 @@
 25, 10, context saved
 35, 1, find vector 3 in memory position 0x0006
 36, 1, load address 0X042B into the PC
-37, 20, Program is 30 Mb large
-57, 450, loading program into memory
-507, 3, marking partition (occupied)
-510, 6, updating PCB
-516, 0, scheduler called
-516, 1, SYSCALL: Return from ISR (IRET) 
-517, 50, CPU Burst
-567, 1, switch to kernel mode
-568, 10, context saved
-578, 1, find vector 6 in memory position 0x000C
-579, 1, load address 0X0639 into the PC
-580, 265, SYSCALL ISR (ADD STEPS HERE)
-845, 1, IRET
-846, 30, CPU Burst
+37, 20, Program is 31415926 Mb large
+57, 0, memory allocation failed for EXEC (PID 1)
+57, 30, CPU Burst

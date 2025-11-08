@@ -1,2 +1,7 @@
-program1, 31415926
-program2, 200000000
+program1, 40
+program2, 25
+program3, 15
+program4, 10
+program5, 8
+program6, 2
+program7, 5

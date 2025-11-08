@@ -2,13 +2,119 @@
 1, 10, context saved
 11, 1, find vector 2 in memory position 0x0004
 12, 1, load address 0X0695 into the PC
-13, 10, clone PCB
-23, 0, SYSCALL: call scheduler
-23, 1, SYSCALL: Return from ISR (IRET) 
-24, 1, switch to kernel mode
-25, 10, context saved
-35, 1, find vector 3 in memory position 0x0006
-36, 1, load address 0X042B into the PC
-37, 20, Program is 31415926 Mb large
-57, 0, memory allocation failed for EXEC (PID 1)
-57, 30, CPU Burst
+13, 5, clone PCB
+18, 0, SYSCALL: call scheduler
+18, 1, SYSCALL: Return from ISR (IRET) 
+19, 1, switch to kernel mode
+20, 10, context saved
+30, 1, find vector 3 in memory position 0x0006
+31, 1, load address 0X042B into the PC
+32, 5, Program is 40 Mb large
+37, 600, loading program into memory
+637, 3, marking partition (occupied)
+640, 6, updating PCB
+646, 0, SYSCALL: call scheduler
+646, 1, SYSCALL: Return from ISR (IRET) 
+647, 67, CPU Burst
+714, 1, switch to kernel mode
+715, 10, context saved
+725, 1, find vector 2 in memory position 0x0004
+726, 1, load address 0X0695 into the PC
+727, 5, clone PCB
+732, 0, SYSCALL: call scheduler
+732, 1, SYSCALL: Return from ISR (IRET) 
+733, 1, switch to kernel mode
+734, 10, context saved
+744, 1, find vector 3 in memory position 0x0006
+745, 1, load address 0X042B into the PC
+746, 5, Program is 25 Mb large
+751, 375, loading program into memory
+1126, 3, marking partition (occupied)
+1129, 6, updating PCB
+1135, 0, SYSCALL: call scheduler
+1135, 1, SYSCALL: Return from ISR (IRET) 
+1136, 1, switch to kernel mode
+1137, 10, context saved
+1147, 1, find vector 4 in memory position 0x0008
+1148, 1, load address 0X0292 into the PC
+1149, 250, SYSCALL ISR
+1399, 1, IRET
+1400, 1, switch to kernel mode
+1401, 10, context saved
+1411, 1, find vector 2 in memory position 0x0004
+1412, 1, load address 0X0695 into the PC
+1413, 5, clone PCB
+1418, 0, SYSCALL: call scheduler
+1418, 1, SYSCALL: Return from ISR (IRET) 
+1419, 1, switch to kernel mode
+1420, 10, context saved
+1430, 1, find vector 3 in memory position 0x0006
+1431, 1, load address 0X042B into the PC
+1432, 5, Program is 15 Mb large
+1437, 225, loading program into memory
+1662, 3, marking partition (occupied)
+1665, 6, updating PCB
+1671, 0, SYSCALL: call scheduler
+1671, 1, SYSCALL: Return from ISR (IRET) 
+1672, 67, CPU Burst
+1739, 1, switch to kernel mode
+1740, 10, context saved
+1750, 1, find vector 2 in memory position 0x0004
+1751, 1, load address 0X0695 into the PC
+1752, 5, clone PCB
+1757, 0, SYSCALL: call scheduler
+1757, 1, SYSCALL: Return from ISR (IRET) 
+1758, 1, switch to kernel mode
+1759, 10, context saved
+1769, 1, find vector 3 in memory position 0x0006
+1770, 1, load address 0X042B into the PC
+1771, 5, Program is 10 Mb large
+1776, 150, loading program into memory
+1926, 3, marking partition (occupied)
+1929, 6, updating PCB
+1935, 0, SYSCALL: call scheduler
+1935, 1, SYSCALL: Return from ISR (IRET) 
+1936, 1, switch to kernel mode
+1937, 10, context saved
+1947, 1, find vector 4 in memory position 0x0008
+1948, 1, load address 0X0292 into the PC
+1949, 250, SYSCALL ISR
+2199, 1, IRET
+2200, 1, switch to kernel mode
+2201, 10, context saved
+2211, 1, find vector 2 in memory position 0x0004
+2212, 1, load address 0X0695 into the PC
+2213, 5, clone PCB
+2218, 0, SYSCALL: call scheduler
+2218, 1, SYSCALL: Return from ISR (IRET) 
+2219, 1, switch to kernel mode
+2220, 10, context saved
+2230, 1, find vector 3 in memory position 0x0006
+2231, 1, load address 0X042B into the PC
+2232, 5, Program is 8 Mb large
+2237, 120, loading program into memory
+2357, 3, marking partition (occupied)
+2360, 6, updating PCB
+2366, 0, SYSCALL: call scheduler
+2366, 1, SYSCALL: Return from ISR (IRET) 
+2367, 67, CPU Burst
+2434, 1, switch to kernel mode
+2435, 10, context saved
+2445, 1, find vector 2 in memory position 0x0004
+2446, 1, load address 0X0695 into the PC
+2447, 5, clone PCB
+2452, 0, SYSCALL: call scheduler
+2452, 1, SYSCALL: Return from ISR (IRET) 
+2453, 0, allocation failed for child PID1
+2453, 1, switch to kernel mode
+2454, 10, context saved
+2464, 1, find vector 3 in memory position 0x0006
+2465, 1, load address 0X042B into the PC
+2466, 5, Program is 2 Mb large
+2471, 0, memory allocation failed for EXEC (PID 1)
+2471, 1, switch to kernel mode
+2472, 10, context saved
+2482, 1, find vector 3 in memory position 0x0006
+2483, 1, load address 0X042B into the PC
+2484, 5, Program is 5 Mb large
+2489, 0, memory allocation failed for EXEC (PID 0)

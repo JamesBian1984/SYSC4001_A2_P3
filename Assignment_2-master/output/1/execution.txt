@@ -13,7 +13,7 @@
 87, 150, loading program into memory
 237, 3, marking partition (occupied)
 240, 6, updating PCB
-246, 0, scheduler called
+246, 0, SYSCALL: call scheduler
 246, 1, SYSCALL: Return from ISR (IRET) 
 247, 100, CPU Burst
 347, 1, switch to kernel mode
@@ -24,11 +24,11 @@
 385, 225, loading program into memory
 610, 3, marking partition (occupied)
 613, 6, updating PCB
-619, 0, scheduler called
+619, 0, SYSCALL: call scheduler
 619, 1, SYSCALL: Return from ISR (IRET) 
 620, 1, switch to kernel mode
 621, 10, context saved
 631, 1, find vector 4 in memory position 0x0008
 632, 1, load address 0X0292 into the PC
-633, 250, SYSCALL ISR (ADD STEPS HERE)
+633, 250, SYSCALL ISR
 883, 1, IRET

@@ -14,19 +14,19 @@
 117, 150, loading program into memory
 267, 3, marking partition (occupied)
 270, 6, updating PCB
-276, 0, scheduler called
+276, 0, SYSCALL: call scheduler
 276, 1, SYSCALL: Return from ISR (IRET) 
 277, 50, CPU Burst
 327, 1, switch to kernel mode
 328, 10, context saved
 338, 1, find vector 6 in memory position 0x000C
 339, 1, load address 0X0639 into the PC
-340, 265, SYSCALL ISR (ADD STEPS HERE)
+340, 265, SYSCALL ISR
 605, 1, IRET
 606, 15, CPU Burst
 621, 1, switch to kernel mode
 622, 10, context saved
 632, 1, find vector 6 in memory position 0x000C
 633, 1, load address 0X0639 into the PC
-634, 265, ENDIO ISR(ADD STEPS HERE)
-899, 1, IRET
+634, 265, ENDIO ISR
+899, 1, SYSCALL: Return from ISR (IRET)
