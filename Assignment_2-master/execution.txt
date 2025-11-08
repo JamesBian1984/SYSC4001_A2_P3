@@ -23,3 +23,9 @@
 580, 265, SYSCALL ISR (ADD STEPS HERE)
 845, 1, IRET
 846, 30, CPU Burst
+876, 1, switch to kernel mode
+877, 10, context saved
+887, 1, find vector 3 in memory position 0x0006
+888, 1, load address 0X042B into the PC
+889, 20, Program is 30 Mb large
+909, 0, memory allocation failed for EXEC (PID 0)

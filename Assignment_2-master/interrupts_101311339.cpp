@@ -29,7 +29,7 @@ std::tuple<std::string, std::string, int> simulate_trace(std::vector<std::string
             execution += intr;
             current_time = time;
 
-            execution += std::to_string(current_time) + ", " + std::to_string(delays[duration_intr]) + ", SYSCALL ISR (ADD STEPS HERE)\n";
+            execution += std::to_string(current_time) + ", " + std::to_string(delays[duration_intr]) + ", SYSCALL ISR\n";
             current_time += delays[duration_intr];
 
             execution +=  std::to_string(current_time) + ", 1, IRET\n";
@@ -39,10 +39,10 @@ std::tuple<std::string, std::string, int> simulate_trace(std::vector<std::string
             current_time = time;
             execution += intr;
 
-            execution += std::to_string(current_time) + ", " + std::to_string(delays[duration_intr]) + ", ENDIO ISR(ADD STEPS HERE)\n";
+            execution += std::to_string(current_time) + ", " + std::to_string(delays[duration_intr]) + ", ENDIO ISR\n";
             current_time += delays[duration_intr];
 
-            execution +=  std::to_string(current_time) + ", 1, IRET\n";
+            execution +=  std::to_string(current_time) + ", 1, SYSCALL: Return from ISR (IRET)\n";
             current_time += 1;
         } else if(activity == "FORK") {
             auto [intr, time] = intr_boilerplate(current_time, 2, 10, vectors);
@@ -202,7 +202,7 @@ std::tuple<std::string, std::string, int> simulate_trace(std::vector<std::string
             current_time += 6;
 
             // scheduler (0 time) and IRET
-            execution += std::to_string(current_time) + ", 0, scheduler called\n";
+            execution += std::to_string(current_time) + ", 0, SYSCALL: call scheduler\n";
             execution += std::to_string(current_time) + ", " + std::to_string(iret_time)+ ", SYSCALL: Return from ISR (IRET) \n";
             current_time += iret_time;
 
